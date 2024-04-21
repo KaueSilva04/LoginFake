@@ -1,0 +1,67 @@
+/* Estilo geral da página */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo do botão Voltar */
+.botao-voltar {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+
+
+/* Estilo geral da tabela */
+table {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-collapse: collapse; /* Remove bordas entre as células */
+    margin: 20px auto; /* Adiciona margem superior e centraliza na tela */
+  }
+  
+  /* Estilo do cabeçalho da tabela */
+  th {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor da fonte do cabeçalho */
+    text-align: center; /* Alinhamento do texto no cabeçalho */
+    padding: 10px; /* Aumenta o espaçamento interno das células do cabeçalho */
+    border: 1px solid #ddd; /* Adiciona borda ao cabeçalho */
+  }
+  
+  /* Estilo das células do corpo da tabela */
+  td {
+    border: 1px solid #ddd; /* Adiciona borda às células */
+    padding: 8px; /* Aumenta o espaçamento interno das células do corpo */
+  }
+  
+  /* Estilo das linhas pares do corpo da tabela (opcional) */
+  tr:nth-child(even) {
+    background-color: #f0f0f0; /* Cor de fundo das linhas pares */
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Dados do Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tabela.css') }}">
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Dados da Tabela Login</h1>
+        <form action="/" method="get">
+        <button type="submit"><a href="/" class="botao-voltar">Voltar</a></button>
+        </form>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Usuário</th>
+                <th>Senha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dado in dados %}
+                <tr>
+                    <td>{{ dado[0] }}</td>  <!--# Exibe o valor da primeira coluna (ID) -->
+                    <td>{{ dado[1] }}</td>  <!--# Exibe o valor da segunda coluna (usuário)-->
+                    <td>{{ dado[2] }}</td>  <!--# Exibe o valor da terceira coluna (senha)-->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

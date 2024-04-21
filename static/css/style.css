@@ -12,7 +12,7 @@ main{
 
 .img{
     width: 66%;
-    background-image: url(/img/imgback.png);  
+    background-image: url(../img/imgback.png);  
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;

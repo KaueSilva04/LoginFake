@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/reset.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.3.2/jsoneditor.min.css">
+
+    
+
+</head>
+<body class="body">
+<main>
+    <div class="img"></div>
+
+    <section class="login" method="POST" action="/">
+        <form method="POST" action="/"  class="login__form">
+            <div class="login__form__organize">
+                
+                <img src="{{ url_for('static', filename='img/logofundo.png') }}" width="50%" height="75% " alt="">
+                
+                <input type="text" id="username" placeholder="username" name="username" required>
+
+            </div>  
+        
+            <input type="text" id="senha"  placeholder="Senha" name="senha" required>
+        
+
+            <input class="login__form__button" type="submit" value="submit"  >
+    
+        </form>
+    </section>
+
+</main>
+
+    
+</body>
+</html>
+
+
